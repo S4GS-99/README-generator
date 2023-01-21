@@ -1,0 +1,22 @@
+{
+	"name": "markdown-generator",
+	"version": "1.0.0",
+	"description": "Command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. ",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/2G2-99/markdown-generator.git"
+	},
+	"author": "2G2-99",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/2G2-99/markdown-generator/issues"
+	},
+	"homepage": "https://github.com/2G2-99/markdown-generator#readme",
+	"dependencies": {
+		"inquirer": "^8.2.5"
+	}
+}
