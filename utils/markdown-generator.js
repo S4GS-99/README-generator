@@ -11,7 +11,7 @@ ${data.description}
 ## Table of contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits}](#credits)
+- [Credits](#credits)
 - [License](#license)
 
 ## Installation
@@ -22,7 +22,7 @@ ${data.installation}
 
 ${data.usage}
 
-##Credits
+## Credits
 
 ${data.contributing}
 
@@ -38,9 +38,9 @@ ${data.tests}
 
 ## Questions
 
-In case you need to reach me or have any questions, here is my email ${
+In case you need to reach me or have any questions, here is my [email](mailto:${
 		data.email
-	}
+	})
 
 `;
 
