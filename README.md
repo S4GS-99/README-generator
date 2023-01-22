@@ -1,6 +1,6 @@
 # README file generator: Node.js
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub top language](https://img.shields.io/github/languages/top/2G2-99/README-generator) ![GitHub last commit](https://img.shields.io/github/last-commit/2G2-99/README-generator)
 
 ## Description
 
