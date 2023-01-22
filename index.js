@@ -10,6 +10,12 @@ const generateMarkdownWith = markdown_generator.generateMarkdownWith;
 const questions = [
 	{
 		type: 'input',
+		name: 'github',
+		message: `what's your GitHub user name?`,
+		default: '[2G2-99](https://github.com/2G2-99)',
+	},
+	{
+		type: 'input',
 		name: 'repo',
 		message: `What's the name of your repo?`,
 		default: 'README-generator',
@@ -54,12 +60,6 @@ const questions = [
 		name: 'tests',
 		message: `Do you want to add any test?`,
 		default: 'Do not apply for tests',
-	},
-	{
-		type: 'input',
-		name: 'github',
-		message: `what's your GitHub user name?`,
-		default: '2G2-99',
 	},
 	{
 		type: 'input',
