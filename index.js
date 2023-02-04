@@ -6,6 +6,8 @@ const inquirer = require('inquirer');
 const markdown_generator = require('./utils/markdown-generator.js');
 const generateMarkdownWith = markdown_generator.generateMarkdownWith;
 
+const README_file = path.normalize('./assets/markdown/generatedREADME.md');
+
 // array of questions for user
 const questions = [
 	{
@@ -72,30 +74,16 @@ const questions = [
 const prompt = inquirer.createPromptModule();
 
 // function to initialize program
-function init() {
-	const README_file = path.normalize('./assets/markdown/generatedREADME.md');
+async function init() {
+	try {
+		const prompts = await prompt(questions);
+		const generateREADME = generateMarkdownWith(prompts);
 
-	prompt(questions).then(data => {
-		fs.writeFile(README_file, generateMarkdownWith(data), err => {
-			err
-				? console.error('ERROR!')
-				: console.log('README successfully created!');
-		});
-	});
+		writeFileAsync(README_file, generateREADME);
+		console.log('Successfully wrote to README.md');
+	} catch (err) {
+		console.error(err);
+	}
 }
-
-// ! NEED TO MAKE IT LIKE THIS
-// async function init() {
-// 	try {
-// 		await prompt;
-// 		const generateREADME = generateMarkdownWith(prompt);
-
-// 		await writeFileAsync('./utils/README.md', generateREADME);
-// 		console.log('Successfully wrote to README.md');
-// 	} catch (err) {
-// 		console.error('ERROR!');
-// 	}
-// }
-// ! ------------------------
 
 init();
