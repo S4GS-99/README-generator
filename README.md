@@ -36,7 +36,7 @@ In the root of the project, run the command `node index.js`.
 [https://choosealicense.com/](https://choosealicense.com/): Listing of open source licenses.
 [license-badges.md](https://gist.github.com/kofiav/c1059e1075b67582e86b07aa9759e20d): GitHub Gist show listing of [shields.io](https://shields.io/) to add badges of different licenses.
 
-2G2-99
+S4GS-99
 
 ## License
 
