@@ -17,6 +17,6 @@
 	},
 	"homepage": "https://github.com/2G2-99/markdown-generator#readme",
 	"dependencies": {
-		"inquirer": "^8.2.5"
+		"inquirer": "^8.2.7"
 	}
 }
